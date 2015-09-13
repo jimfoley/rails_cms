@@ -12,7 +12,6 @@
 default: &default
   adapter: mysql2
   encoding: utf8
-  reconnect: false
   pool: 5
   username: root
   password: jim
@@ -20,7 +19,7 @@ default: &default
 
 development:
   <<: *default
-  database: #cms_development
+  database: cms_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
